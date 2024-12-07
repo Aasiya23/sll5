@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 void delet_front()
 {
 NODE temp;
@@ -14,6 +15,25 @@ free(temp);
 }
 }
 
+=======
+void delet_end()
+{
+NODE temp,prev;
+temp=first;
+if(temp->next==NULL)
+first=NULL;
+else
+{
+while(temp->next!=NULL)
+{
+prev=temp;
+temp=temp->next;
+}
+prev->next=NULL;
+}
+printf("\nthe deleted student usn is:
+%s",temp->usn);
+>>>>>>> 09dcd03ced9c7c92f487f5770bd40b9a7622de6e
 =======
 void insert_front()
 {
@@ -58,5 +78,6 @@ while(p->next!=NULL)
 p=p->next;
 p->next=nw;
 }
+>>>>>>> 1050e7e7154f78ded79809c7b67ece385dea0df3
 }
 >>>>>>> 1050e7e7154f78ded79809c7b67ece385dea0df3
